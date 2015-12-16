@@ -1,2 +1,2 @@
-# worm
-A multi player, server based worm game for computer bots as players
+# snake
+A multi player, server based snake game for computer bots as players

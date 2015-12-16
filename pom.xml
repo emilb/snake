@@ -3,18 +3,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>se.cygni</groupId>
-    <artifactId>worm</artifactId>
+    <artifactId>snake</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>worm</name>
-    <url>http://emilb.github.com/worm</url>
+    <name>snake</name>
+    <url>http://emilb.github.com/snake</url>
 
     <developers>
         <developer>
             <id>emilb</id>
             <name>Emil Breding</name>
             <email>emil.breding@cygni.se</email>
-            <url>https://github.com/emilb/worm</url>
+            <url>https://github.com/emilb/snake</url>
             <timezone>+1</timezone>
             <roles>
                 <role>Developer</role>
@@ -36,10 +36,10 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:emilb/worm.git</connection>
-        <url>scm:git:git@github.com:emilb/worm.git</url>
-        <developerConnection>scm:git:git@github.com:emilb/worm.git</developerConnection>
-        <tag>worm-1.0</tag>
+        <connection>scm:git:git@github.com:emilb/snake.git</connection>
+        <url>scm:git:git@github.com:emilb/snake.git</url>
+        <developerConnection>scm:git:git@github.com:emilb/snake.git</developerConnection>
+        <tag>snake-1.0</tag>
     </scm>
 
     <prerequisites>
@@ -220,7 +220,7 @@
 
                     <deployables>
                         <deployable>
-                          <location>${basedir}/server/target/worm-server-${project.version}.war</location>
+                          <location>${basedir}/server/target/snake-server-${project.version}.war</location>
                           <type>war</type>
                           <properties>
                             <context>/</context>
@@ -394,12 +394,12 @@
         <dependencies>
             <dependency>
                 <groupId>se.cygni</groupId>
-                <artifactId>worm-common</artifactId>
+                <artifactId>snake-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>se.cygni</groupId>
-                <artifactId>worm-client</artifactId>
+                <artifactId>snake-client</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -716,12 +716,12 @@
     </dependencies>
 
     <issueManagement>
-        <url>https://github.com/emilb/worm/issues</url>
+        <url>https://github.com/emilb/snake/issues</url>
         <system>GitHub</system>
     </issueManagement>
 
     <ciManagement>
-        <url>http://worm.cygni.se/jenkins</url>
+        <url>http://snake.cygni.se/jenkins</url>
         <system>Jenkins</system>
     </ciManagement>
 
@@ -794,7 +794,7 @@
 
                           <deployables>
                             <deployable>
-                              <location>${basedir}/server/target/worm-server-${project.version}.war</location>
+                              <location>${basedir}/server/target/snake-server-${project.version}.war</location>
                               <type>war</type>
                               <properties>
                                 <context>/</context>

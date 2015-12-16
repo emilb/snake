@@ -4,13 +4,13 @@
 
     <parent>
         <groupId>se.cygni</groupId>
-        <artifactId>worm</artifactId>
+        <artifactId>snake</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>worm-common</artifactId>
+    <artifactId>snake-common</artifactId>
     <packaging>jar</packaging>
-    <name>worm-common</name>
+    <name>snake-common</name>
 
 
     <build>

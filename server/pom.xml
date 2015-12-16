@@ -4,13 +4,13 @@
 
     <parent>
         <groupId>se.cygni</groupId>
-        <artifactId>worm</artifactId>
+        <artifactId>snake</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>worm-server</artifactId>
+    <artifactId>snake-server</artifactId>
     <packaging>war</packaging>
-    <name>worm-server</name>
+    <name>snake-server</name>
 
     <build>
         <plugins>
@@ -43,7 +43,7 @@
     <dependencies>
         <dependency>
             <groupId>se.cygni</groupId>
-            <artifactId>worm-common</artifactId>
+            <artifactId>snake-common</artifactId>
         </dependency>
 
         <!-- Core utilities used by other modules. Define this if you use 
