@@ -25,6 +25,12 @@ public class World {
         }
     }
 
+    public World(Tile[][] worldmatrix) {
+        this.width = worldmatrix.length;
+        this.height = worldmatrix[0].length;
+        this.worldmatrix = worldmatrix;
+    }
+
     public World(World copy, WorldTransformation...transformations) {
         this.width = copy.width;
         this.height = copy.height;
@@ -47,5 +53,12 @@ public class World {
 
     public Tile[][] getWorldmatrix() {
         return worldmatrix;
+    }
+
+    public boolean isTileEmpty(int width, int height) {
+        if (width >= this.width || height >= this.height)
+            return false;
+
+        return worldmatrix[width][height].getContent() instanceof Empty;
     }
 }
