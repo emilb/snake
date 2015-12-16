@@ -1,6 +1,4 @@
-package se.cygni.game.worldobjects;
-
-import se.cygni.game.World;
+package se.cygni.game.worldobject;
 
 /**
  * Created by emil on 16/12/15.

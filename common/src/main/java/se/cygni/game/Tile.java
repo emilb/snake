@@ -1,6 +1,6 @@
 package se.cygni.game;
 
-import se.cygni.game.worldobjects.WorldObject;
+import se.cygni.game.worldobject.WorldObject;
 
 public class Tile {
 

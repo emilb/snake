@@ -1,6 +1,7 @@
 package se.cygni.game;
 
-import se.cygni.game.worldobjects.Empty;
+import se.cygni.game.transformation.WorldTransformation;
+import se.cygni.game.worldobject.Empty;
 
 /**
  * An immutable representation of the current world state.
@@ -24,8 +25,16 @@ public class World {
         }
     }
 
-    public World(World copy) {
-        this(copy.getWidth(), copy.getHeight());
+    public World(World copy, WorldTransformation...transformations) {
+        this.width = copy.width;
+        this.height = copy.height;
+
+        World resultingWorld = copy;
+        for (WorldTransformation t: transformations) {
+            resultingWorld = t.transform(resultingWorld);
+        }
+
+        this.worldmatrix = resultingWorld.getWorldmatrix();
     }
 
     public int getWidth() {
@@ -34,5 +43,9 @@ public class World {
 
     public int getHeight() {
         return height;
+    }
+
+    public Tile[][] getWorldmatrix() {
+        return worldmatrix;
     }
 }
