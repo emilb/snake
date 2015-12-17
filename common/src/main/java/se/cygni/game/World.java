@@ -61,4 +61,12 @@ public class World {
 
         return worldmatrix[width][height].getContent() instanceof Empty;
     }
+
+    public Tile getTile(int x, int y) {
+        if (x > this.width || y > this.height) {
+            throw new RuntimeException("Out of bounds on world matrix");
+        }
+
+        return worldmatrix[x][y];
+    }
 }
